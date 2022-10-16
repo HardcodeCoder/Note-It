@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SettingsToggleableItem">
+        <attr name="settingsToggleableItemTitle" format="string" />
+        <attr name="settingsToggleableItemText" format="string" />
+    </declare-styleable>
+</resources>

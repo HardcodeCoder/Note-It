@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="96dp"
+        android:contentDescription="@string/image_btn_desc"
+        android:src="@drawable/ic_note"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="?primaryColorOnBackground"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <!--<Button
+        android:id="@+id/btn1"
+        style="@style/SignInProviderBtn"
+        android:layout_marginTop="128dp"
+        android:background="#FFFFFF"
+        android:drawableStart="@drawable/ic_g_logo"
+        android:drawablePadding="12dp"
+        android:gravity="center"
+        android:paddingStart="0dp"
+        android:paddingEnd="16dp"
+        android:text="@string/sign_in_provider_google"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_name" /> -->
+
+    <Button
+        android:id="@+id/btn2"
+        style="@style/SignInProviderBtn"
+        android:layout_marginTop="128dp"
+        android:background="#43c5a5"
+        android:drawableStart="@drawable/ic_mail"
+        android:text="@string/sign_in_provider_mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_name" />
+
+    <!--<Button
+        android:id="@+id/btn3"
+        style="@style/SignInProviderBtn"
+        android:layout_marginTop="36dp"
+        android:background="#43c5a5"
+        android:drawableStart="@drawable/ic_phone"
+        android:text="@string/sign_in_provider_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn2" /> -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/skip_btn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/skip_btn"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

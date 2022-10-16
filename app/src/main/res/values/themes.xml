@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ThemeDark" parent="ActivityThemeDark" />
+
+    <style name="ThemeLight" parent="ActivityThemeLight" />
+
+    <style name="ThemeBlack" parent="ActivityThemeBlack" />
+
+</resources>

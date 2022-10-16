@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hardcodecoder.noteit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".NoteApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/ThemeDark">
+
+        <activity android:name=".ui.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.CreateNotes"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.EditNote"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity android:name=".ui.SignInEmail" />
+        <activity android:name=".ui.SignInChooserActivity" />
+        <activity android:name=".ui.MainActivity" />
+
+        <activity android:name=".ui.SettingsActivity" />
+        <activity android:name=".ui.UserAccountActivity" />
+
+        <service
+            android:name=".jobs.UploadJob"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".jobs.DeleteJob"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+    </application>
+</manifest>

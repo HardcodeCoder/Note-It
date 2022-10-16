@@ -1,0 +1,8 @@
+# Default ignored files
+/.gradle/
+/.idea/
+/app/app.iml
+/app/build/
+/app/google-services.json
+/Note It.iml
+/local.properties

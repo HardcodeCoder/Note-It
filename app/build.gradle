@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+ext.versionMajor = 1
+ext.versionMinor = 0
+ext.versionPatch = 0
+ext.minimumSdkVersion = 21
+ext.isRelease = false
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion '33.0.3'
+    defaultConfig {
+        applicationId "com.hardcodecoder.noteit"
+        minSdkVersion project.ext.minimumSdkVersion
+        targetSdkVersion 33
+        versionCode generateVersionCode()
+        versionName generateVersionName()
+        vectorDrawables.useSupportLibrary = true
+        resConfig 'en'
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
+
+private Integer generateVersionCode() {
+    return ext.minimumSdkVersion * 10000000 + ext.versionMajor * 10000 + ext.versionMinor * 100 + ext.versionPatch
+}
+
+private String generateVersionName() {
+    String versionName = "${ext.versionMajor}.${ext.versionMinor}.${ext.versionPatch}"
+    if (ext.isRelease) {
+        versionName += "-Release"
+    } else {
+        versionName += "-Debug"
+    }
+    return versionName
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.material:material:1.6.1'
+
+    annotationProcessor 'androidx.annotation:annotation:1.5.0'
+
+    implementation 'com.google.firebase:firebase-auth:21.0.8'
+    implementation 'com.google.firebase:firebase-storage:20.0.2'
+}
+
+apply plugin: 'com.google.gms.google-services'

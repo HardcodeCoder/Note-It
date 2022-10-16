@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Note It</string>
+
+    <string name="iv_icon_desc">Button</string>
+
+    <string name="sign_in_provider_mail">Sign in with Mail</string>
+
+    <string name="default_email_entry">Enter your email address to continue</string>
+    <string name="welcome_back">Welcome back, you have already signed up. Please enter the password to continue</string>
+    <string name="greetings_new_user">Welcome to Note it ! \n Please create a strong memorable password</string>
+    <string name="email_hint">Enter your email id</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="name_hint">Enter your name</string>
+    <string name="next_btn">Next</string>
+    <string name="skip_btn">Skip</string>
+    <string name="sign_in_btn">Sign in</string>
+    <string name="sign_up_btn">Sign up</string>
+    <string name="email_error">Invalid email id</string>
+    <string name="password_error">Password must be at least 6 characters long</string>
+    <string name="wrong_password">Incorrect Password</string>
+
+    <string name="refresh">Refresh</string>
+    <string name="sign_out">Sign out</string>
+    <string name="settings">Settings</string>
+
+    <string name="image_btn_desc">Image Button</string>
+    <string name="image_user_desc">User image</string>
+
+    <string name="hint_enter_title">Enter note title</string>
+    <string name="hint_enter_note">Note it here</string>
+
+    <string name="enable_dark_mode_title">Enable dark theme</string>
+    <string name="enable_dark_mode_desc">Instantly enables dark theme if auto theme is currently disabled</string>
+    <string name="use_pure_black_title">User pure black</string>
+    <string name="use_pure_black_desc">Use pure black colors when dark mode is on. Helps improve battery life in amoled displays</string>
+    <string name="enable_auto_theme_title">Enable auto theme</string>
+    <string name="enable_auto_theme_desc">Automatically switch between dark and light theme based on time of day</string>
+
+    <string name="update_info">Update info</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="enter_email">New email id</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Okay</string>
+    <string name="footer">Note It from HardcodeCoder v</string>
+
+    <string name="note_def_title">No title</string>
+    <string name="noted_saved_toast">Note saved successfully</string>
+    <string name="noted_discarded_toast">Discarded empty note</string>
+    <string name="alert_dialog_title_continue">Are you sure you want to continue?</string>
+    <string name="alert_dialog_delete_note_desc">This note will be permanently deleted</string>
+    <string name="alert_dialog_positive">Yes</string>
+    <string name="alert_dialog_negative">Cancel</string>
+    <string name="toast_note_not_found">Cannot find notes</string>
+
+    <!-- User Info Activity -->
+    <string name="toast_signed_out">Signed out successfully</string>
+    <string name="user_name">Name:</string>
+    <string name="user_email_id">Email id:</string>
+    <string name="last_sign_in">Last signed in</string>
+    <string name="select_profile_image">Select photo</string>
+    <string name="user_name_error">Name cannot be empty</string>
+    <string name="user_email_id_error">Email id cannot be empty</string>
+    <string name="user_email_invalid">Invalid email id</string>
+    <string name="toast_email_id_updated">Successfully updated email</string>
+    <string name="toast_user_profile_photo_upload_failed">Failed to upload photo, please try again</string>
+
+
+</resources>

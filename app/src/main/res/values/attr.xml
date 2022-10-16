@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ThemeComponents">
+        <attr name="isLightStatusBar" format="boolean" />
+        <attr name="statusBarColor" format="color|reference" />
+
+        <attr name="primaryColor" format="color|reference" />
+        <attr name="colorOnPrimary" format="color|reference" />
+
+        <attr name="windowBackgroundColor" format="color|reference" />
+        <attr name="primaryColorOnBackground" format="color|reference" />
+        <attr name="secondaryColorOnBackground" format="color|reference" />
+
+        <attr name="primaryTextColor" format="color|reference" />
+        <attr name="secondaryTextColor" format="color|reference" />
+        <attr name="disabledTextColor" format="color|reference" />
+
+        <attr name="surfaceColor" format="color|reference" />
+        <attr name="colorOnSurface" format="color|reference" />
+
+        <attr name="bottomNavBarBackground" format="color|reference" />
+
+        <attr name="selectedItemOverlay" format="color|reference" />
+        <attr name="colorStroke" format="color|reference" />
+
+        <attr name="drawableIconTint" format="color|reference" />
+
+        <attr name="overlayColor" format="color" />
+
+    </declare-styleable>
+</resources>

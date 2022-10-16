@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="ProductRegularTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/product_sans_regular</item>
+        <item name="fontFamily">@font/product_sans_regular</item>
+    </style>
+
+    <style name="ProductRegularButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/product_sans_regular</item>
+        <item name="fontFamily">@font/product_sans_regular</item>
+    </style>
+
+    <style name="AppThemeLight" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:navigationBarColor">@color/window_background_light</item>
+        <item name="android:textViewStyle">@style/ProductRegularTextViewStyle</item>
+        <item name="android:buttonStyle">@style/ProductRegularButtonStyle</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:navigationBarColor">@color/window_background_dark</item>
+        <item name="android:textViewStyle">@style/ProductRegularTextViewStyle</item>
+        <item name="android:buttonStyle">@style/ProductRegularButtonStyle</item>
+    </style>
+
+    <style name="ActivityThemeDark" parent="AppThemeDark">
+        <!-- Customize your theme here. -->
+        <item name="primaryColor">@color/primary_color_dark</item>
+        <item name="colorPrimary">?primaryColor</item>
+        <item name="colorPrimaryDark">?primaryColor</item>
+        <item name="colorOnPrimary">@color/on_primary_dark</item>
+        <item name="colorAccent">?primaryColor</item>
+
+        <item name="android:windowBackground">@color/window_background_dark</item>
+        <item name="windowBackgroundColor">@color/window_background_dark</item>
+        <item name="primaryColorOnBackground">@color/primary_color_on_background_dark</item>
+        <item name="secondaryColorOnBackground">@color/secondary_color_on_background_dark</item>
+
+        <item name="surfaceColor">@color/surface_dark</item>
+        <item name="colorOnSurface">@color/color_on_surface_dark</item>
+
+        <item name="bottomNavBarBackground">@color/surface_dark</item>
+
+        <item name="selectedItemOverlay">@color/selected_item_overlay_dark</item>
+
+        <item name="colorStroke">@color/stroke_color_dark</item>
+
+        <item name="drawableIconTint">@color/drawable_icon_tint_dark</item>
+
+        <item name="android:textColorSecondary">?colorOnSurface</item>
+
+        <item name="overlayColor">@color/overlay_color_dark</item>
+
+        <item name="isLightStatusBar">false</item>
+        <item name="statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+    <style name="ActivityThemeBlack">
+        <item name="android:windowBackground">@color/window_background_black</item>
+        <item name="colorOnPrimary">@color/on_primary_black</item>
+        <item name="windowBackgroundColor">@color/window_background_black</item>
+        <item name="surfaceColor">@color/surface_black</item>
+        <item name="android:navigationBarColor">@color/window_background_black</item>
+    </style>
+
+
+    <style name="ActivityThemeLight" parent="AppThemeLight">
+        <!-- Customize your theme here. -->
+        <item name="primaryColor">@color/primary_color_light</item>
+        <item name="colorPrimary">?primaryColor</item>
+        <item name="colorPrimaryDark">?primaryColor</item>
+        <item name="colorOnPrimary">@color/on_primary_light</item>
+        <item name="colorAccent">?primaryColor</item>
+
+        <item name="android:windowBackground">@color/window_background_light</item>
+        <item name="windowBackgroundColor">@color/window_background_light</item>
+        <item name="primaryColorOnBackground">@color/primary_color_on_background_light</item>
+        <item name="secondaryColorOnBackground">@color/secondary_color_on_background_light</item>
+
+        <item name="surfaceColor">@color/surface_light</item>
+        <item name="colorOnSurface">@color/color_on_surface_light</item>
+
+        <item name="bottomNavBarBackground">@color/window_background_light</item>
+
+        <item name="selectedItemOverlay">@color/selected_item_overlay_light</item>
+
+        <item name="colorStroke">@color/stroke_color_light</item>
+
+        <item name="drawableIconTint">@color/drawable_icon_tint_light</item>
+
+        <item name="android:textColorSecondary">?colorOnSurface</item>
+
+        <item name="overlayColor">@color/overlay_color_light</item>
+
+        <item name="isLightStatusBar">true</item>
+        <item name="statusBarColor">#BFFFFFFF</item>
+    </style>
+
+</resources>

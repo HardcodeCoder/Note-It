@@ -1,0 +1,24 @@
+<resources>
+
+    <style name="AppThemeLight" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:statusBarColor">?statusBarColor</item>
+        <item name="android:windowLightStatusBar">?isLightStatusBar</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:navigationBarColor">@color/window_background_light</item>
+        <item name="android:textViewStyle">@style/ProductRegularTextViewStyle</item>
+        <item name="android:buttonStyle">@style/ProductRegularButtonStyle</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:statusBarColor">?statusBarColor</item>
+        <item name="android:windowLightStatusBar">?isLightStatusBar</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:navigationBarColor">@color/window_background_dark</item>
+        <item name="android:textViewStyle">@style/ProductRegularTextViewStyle</item>
+        <item name="android:buttonStyle">@style/ProductRegularButtonStyle</item>
+    </style>
+</resources>
